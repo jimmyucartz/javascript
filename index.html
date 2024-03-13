@@ -4,15 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Javascript | Location Object</title>
+    <title>Javascript | Form Objects & Form Validation</title>
   </head>
   <body>
     <section>
-      <button onclick="gotoGoogle()">Go to google</button> <br />
-      <br /><br />
-      <button onclick="reload()">Reload</button>
-      <br /><br /><br />
-      <button onclick="replace()">Replace History</button>
+      <h4>Form Object</h4>
+      <form
+        onsubmit="submitForm(event)"
+        style="display: flex; flex-direction: column; gap: 20px; width: 40%"
+      >
+        <input type="text" placeholder="Enter username" required />
+        <input type="email" placeholder="Enter email" required />
+        <label>
+          <input type="radio" name="occ" id="stud" required /> Student
+        </label>
+        <label>
+          <input type="radio" name="occ" id="self" /> Self Employed
+        </label>
+        <label> <input type="radio" name="occ" id="sal" /> Salaried </label>
+        <input type="submit" />
+      </form>
+    </section>
+    <section
+      style="
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <h3>Form Validation</h3>
+      <h4>Sign Up Form</h4>
+      <form
+        id="validate_form"
+        name="validate_form"
+        onsubmit="validateForm(event)"
+        style="display: flex; flex-direction: column; gap: 20px; width: 40%"
+      >
+        <input
+          type="text"
+          name="fname"
+          placeholder="Enter First Name"
+          required
+        />
+        <input
+          type="text"
+          name="lname"
+          placeholder="Enter Last Name"
+          required
+        />
+        <input type="email" name="email" placeholder="Enter email" required />
+        <input type="number" name="age" placeholder="Enter Age" required />
+        <input type="submit" />
+      </form>
     </section>
     <!-- <script src="script.js"></script> -->
     <!-- <script src="datatypes.js"></script> -->
@@ -21,6 +67,7 @@
     <!-- <script src="flow_ctrl_loop.js"></script> -->
     <!-- <script src="arrays.js"></script> -->
     <!-- <script src="events.js"></script> -->
-    <script src="location_obj.js"></script>
+    <!-- <script src="location_obj.js"></script> -->
+    <script src="form.js"></script>
   </body>
 </html>
