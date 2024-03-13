@@ -4,46 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Javascript | Events</title>
+    <title>Javascript | Location Object</title>
   </head>
   <body>
-    <p>EVENTS in JS</p>
-
     <section>
-      <p>
-        <button onclick="alert('Clicked Button')">Click ME</button> <br />
-        <br />
-        <br />
-        <button class="bg-color-change-btn" onclick="changeBGColorStatic()">
-          Change Body Background Color
-        </button>
-      </p>
-      <p>
-        <button id="check" onclick="fetchResults()">Fetch Results</button>
-      </p>
-      <p id="results"></p>
-    </section>
-    <section
-      id="section-2"
-      style="
-        min-height: 30dvh;
-        width: 20dvw;
-        justify-self: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-        flex-direction: column;
-      "
-    >
-      <p>Section 2</p>
-
-      <input
-        type="text"
-        placeholder="Enter Text"
-        id="inputA"
-        style="padding: 5px"
-      />
+      <button onclick="gotoGoogle()">Go to google</button> <br />
+      <br /><br />
+      <button onclick="reload()">Reload</button>
+      <br /><br /><br />
+      <button onclick="replace()">Replace History</button>
     </section>
     <!-- <script src="script.js"></script> -->
     <!-- <script src="datatypes.js"></script> -->
@@ -51,6 +20,7 @@
     <!-- <script src="strings_fun.js"></script> -->
     <!-- <script src="flow_ctrl_loop.js"></script> -->
     <!-- <script src="arrays.js"></script> -->
-    <script src="events.js"></script>
+    <!-- <script src="events.js"></script> -->
+    <script src="location_obj.js"></script>
   </body>
 </html>
